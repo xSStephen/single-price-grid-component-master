@@ -28,6 +28,12 @@ main {
 
 .grid {
   display: grid;
+  grid-template-areas:
+    "section1 section1"
+    "section2 section3";
+  width: 100vh;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 /* All Sections */
@@ -35,14 +41,18 @@ main {
 
 .section1 {
   background-color: white;
+  grid-area: section1;
+  width: 100%;
 }
 
 /* Section 2 */
 .section2 {
   background-color: var(--cyan);
+  grid-area: section2;
 }
 
 /* Section 3 */
 .section3 {
   background-color: hsla(179, 62%, 43%, 0.556);
+  grid-area: section3;
 }
