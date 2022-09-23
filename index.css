@@ -31,9 +31,9 @@ main {
   grid-template-areas:
     "section1 section1"
     "section2 section3";
-  width: 100vh;
-  height: 50vh;
-  border-radius: 20px;
+  width: 75vh;
+  height: 55vh;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -50,16 +50,77 @@ main {
   width: 100%;
 }
 
+.section1 > h2 {
+  color: var(--cyan);
+}
+
+.section1 > h4 {
+  color: var(--byellow);
+  padding: 1.5rem 0 1rem 0;
+}
+
+.section1 > p {
+  color: hsl(218, 22%, 67%);
+}
+
 /* Section 2 */
 .section2 {
   background-color: var(--cyan);
   grid-area: section2;
-  width: 50vh;
+  width: auto;
+  color: white;
+}
+
+.dollar-box {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 0.4rem 0;
+}
+
+.dollar {
+  font-size: 2rem;
+}
+
+.dollar-month {
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section2 > button {
+  background-color: var(--byellow);
+  width: 100%;
+  height: 3rem;
+  border-color: rgba(240, 248, 255, 0);
+  box-shadow: 3px 3px 8px hsl(179, 61%, 27%);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 /* Section 3 */
 .section3 {
   background-color: hsla(179, 62%, 43%, 0.556);
   grid-area: section3;
-  width: 50vh;
+  width: auto;
+}
+
+.section3 > h3 {
+  color: white;
+}
+
+.section3 > p {
+  padding: 1.5rem 0 0 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-areas:
+      "section1"
+      "section2"
+      "section3";
+    height: auto;
+    width: 35vh;
+  }
 }
