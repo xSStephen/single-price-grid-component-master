@@ -32,11 +32,16 @@ main {
     "section1 section1"
     "section2 section3";
   width: 100vh;
+  height: 50vh;
   border-radius: 20px;
   overflow: hidden;
 }
 
 /* All Sections */
+.section {
+  padding: 2.5rem;
+}
+
 /* Section 1 */
 
 .section1 {
@@ -49,10 +54,12 @@ main {
 .section2 {
   background-color: var(--cyan);
   grid-area: section2;
+  width: 50vh;
 }
 
 /* Section 3 */
 .section3 {
   background-color: hsla(179, 62%, 43%, 0.556);
   grid-area: section3;
+  width: 50vh;
 }
